@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ADF7B59F1CDC37E600BF3766 /* screen.png in Resources */ = {isa = PBXBuildFile; fileRef = ADF7B59E1CDC37E600BF3766 /* screen.png */; };
 		B80746211CDA379600FCC712 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B80746201CDA379600FCC712 /* main.m */; };
 		B80746241CDA379600FCC712 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B80746231CDA379600FCC712 /* AppDelegate.m */; };
 		B80746271CDA379600FCC712 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B80746261CDA379600FCC712 /* ViewController.m */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ADF7B59E1CDC37E600BF3766 /* screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen.png; sourceTree = "<group>"; };
 		B807461C1CDA379600FCC712 /* SegmentControlDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SegmentControlDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B80746201CDA379600FCC712 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B80746221CDA379600FCC712 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				B80746381CDA379600FCC712 /* SegmentControlDemoTests */,
 				B80746431CDA379600FCC712 /* SegmentControlDemoUITests */,
 				B807461D1CDA379600FCC712 /* Products */,
+				ADF7B59E1CDC37E600BF3766 /* screen.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -244,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B807462F1CDA379600FCC712 /* LaunchScreen.storyboard in Resources */,
+				ADF7B59F1CDC37E600BF3766 /* screen.png in Resources */,
 				B807462C1CDA379600FCC712 /* Assets.xcassets in Resources */,
 				B807462A1CDA379600FCC712 /* Main.storyboard in Resources */,
 			);
@@ -498,6 +502,7 @@
 				B807464B1CDA379600FCC712 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B807464C1CDA379600FCC712 /* Build configuration list for PBXNativeTarget "SegmentControlDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +511,7 @@
 				B807464E1CDA379600FCC712 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B807464F1CDA379600FCC712 /* Build configuration list for PBXNativeTarget "SegmentControlDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +520,7 @@
 				B80746511CDA379600FCC712 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

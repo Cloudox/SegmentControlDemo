@@ -28,13 +28,45 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    // 初始化，添加分段名，会自动布局
     self.segmentedControl = [[UISegmentedControl alloc] initWithItems:@[@"正在销售", @"已下架"]];
     self.segmentedControl.frame = CGRectMake(-5, 50, SCREENWIDTH+10, 30);
+    
+    // 设置整体的色调
     self.segmentedControl.tintColor = cmGreen;
+    
+    // 设置分段名的字体
     NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:cmGreen,NSForegroundColorAttributeName,[UIFont systemFontOfSize:18],NSFontAttributeName ,nil];
     [self.segmentedControl setTitleTextAttributes:dic forState:UIControlStateNormal];
+
+    // 设置初始选中项
     self.segmentedControl.selectedSegmentIndex = 0;
-    [self.segmentedControl addTarget:self action:@selector(selectItem:) forControlEvents:UIControlEventValueChanged];
+    
+    [self.segmentedControl addTarget:self action:@selector(selectItem:) forControlEvents:UIControlEventValueChanged];// 添加响应方法
+    
+    // 设置样式的segmentedControlStyle属性在iOS 7.0之后将不再起作用
+    
+    // 设置点击后恢复原样，默认为NO，点击后一直保持选中状态
+//    self.segmentedControl.momentary = YES;
+    
+    // 在指定序号处插入一个分段，会自动布局
+//    [self.segmentedControl insertSegmentWithTitle:@"已删除" atIndex:2 animated:NO];
+    
+    // 在指定序号处移除一个分段，会自动布局
+//    [self.segmentedControl removeSegmentAtIndex:2 animated:NO];
+    
+    // 设置指定序号处的分段的宽度
+//    [self.segmentedControl setWidth:50.0 forSegmentAtIndex:1];
+    
+    // 获取指定序号处标题的内容
+//    NSLog(@"%@", [self.segmentedControl titleForSegmentAtIndex:1]);
+    
+    // 获取指定序号处标题的宽度
+//    NSLog(@"%f", [self.segmentedControl widthForSegmentAtIndex:1]);
+    
+    // 设置指定序号处的分段不可选
+//    [self.segmentedControl setEnabled:NO forSegmentAtIndex:1];
     
     [self.view addSubview:self.segmentedControl];
     
